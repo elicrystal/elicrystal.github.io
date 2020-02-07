@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+
+	<style>
+		
+#fish{
+width: 600px;
+height: 500px;
+background-color: navy;
+font-size: 100px;
+background-position: center;
+background-size: contain;
+background-repeat: no-repeat;}
+
+
+	</style>
+</head>
+<body>
+
+
+
+<div id="fish"></div>
+<script type="text/javascript">
+	
+var fish = document.getElementById('fish');
+
+
+var fishes = ["url(https://specials-images.forbesimg.com/imageserve/1188632117/960x0.jpg?fit=scale)", "url(https://static.clubs.nfl.com/image/private/t_editorial_landscape_12_desktop/cowboys/p9jbijsaba1z8ibxgpdq)", "url(https://usatcowboyswire.files.wordpress.com/2018/10/usatsi_11400713.jpg?w=1000&h=600&crop=1)", "url(https://usatcowboyswire.files.wordpress.com/2018/09/usatsi_11352235.jpg?w=1000&h=600&crop=1)", "url(https://media.wfaa.com/assets/WFAA/images/e75588ef-cafd-405c-8bd0-764430a90c16/e75588ef-cafd-405c-8bd0-764430a90c16_750x422.jpg)", "url(https://img.bleacherreport.net/img/images/photos/003/784/874/hi-res-d63c41641ee7fd245bc1da51d72e367a_crop_north.jpg?h=533&w=800&q=70&crop_x=center&crop_y=top)"];
+var randomNumber;
+
+fish.addEventListener("click", function(){ 
+
+randomNumber = Math.round(Math.random() * 6);
+
+	fish.style.backgroundImage = fishes[randomNumber]});
+
+
+
+</script>
+
+
+
+
+
+
+
+
+
+</body>
+</html>
